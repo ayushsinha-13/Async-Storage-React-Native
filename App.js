@@ -30,19 +30,19 @@ const App = () => {
   return (
     <View>
       <View style={{ margin: 20,}}>
-        <Button title="Set Data" onPress={setData} />
+        <Button title="Set Data" onPress={setData} color={"blue"} />
       </View>
 
       <View style={{ margin: 20,}}>
-        <Button title="Show Data" onPress={showData} />
+        <Button title="Show Data" onPress={showData} color={"green"} />
       </View>
 
-      <View style={{ margin: 20,}}>
-        <Button title="Clear Data" onPress={clearData} />
+      <View style={{ margin: 20, }}>
+        <Button title="Clear Data" onPress={clearData} color={"red"} />
       </View>
 
       {
-        name ? <Text style={{fontSize: 19, color:"#000", margin: 20}}>{name}  {age}</Text> : null
+        name ? <Text style={{fontSize: 19, color:"#000",margin: 20}}>{name}  {age}</Text> : null
       }
     </View>
   );
